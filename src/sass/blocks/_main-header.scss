@@ -1,0 +1,17 @@
+.main-header {
+  margin: 0;
+  width: 100%;
+
+  @include tablet {
+    padding-top: 24px;
+    padding-bottom: 64px;
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  @include desktop {
+    padding-top: 56px;
+    padding-bottom: 72px;
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cat energy</title>
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/img/favicons/180x180.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+
+  <link rel="stylesheet" href="/css/style.min.css">
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <nav class="main-navigation main-navigation--closed">
+      <div class="main-navigation__logo-wrapper">
+        <a class="main-navigation__main-logo main-logo" href="#">
+          <picture>
+            <source media="(min-width:1440px)" width="71" height="60" srcset="/img/logo-desktop.svg">
+            <source media="(min-width:768px)" width="71" height="58" srcset="/img/logo-tablet.svg">
+            <img src="/img/logo.svg" width="35" height="38" alt="На главную страницу">
+          </picture>
+          <svg width="102" height="19">
+            <use xlink:href="/img/sprite.svg#cat-energy"></use>
+          </svg>
+        </a>
+        <button class="main-navigation__button" type="button" onclick="this.closest('nav').classList.toggle('main-navigation--closed')">
+          <span class="visually-hidden">Переключить меню</span>
+          <svg width="19" height="20">
+            <use xlink:href="/img/sprite.svg#close"></use>
+          </svg>
+          <svg width="24" height="18">
+            <use xlink:href="/img/sprite.svg#hamburger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="main-navigation__list">
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="/index.html">
+            <span>Главная</span>
+          </a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link main-navigation__link--current">
+            <span>Каталог продукции</span>
+          </a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="/form.html">
+            <span>Подбор программы</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</body>
+
+</html>
