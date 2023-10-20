@@ -1,0 +1,148 @@
+.promo {
+  @include desktop {
+    position: relative;
+    min-height: 700px;
+
+    & .main-navigation__link {
+      color: white;
+    }
+
+    & .main-navigation__link--current span {
+      border-bottom: 2px solid white;
+    }
+  }
+}
+
+.promo__container {
+  position: relative;
+  padding-top: 28px;
+  text-align: center;
+  color: white;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: calc(100% - 180px);
+  }
+
+  &::before {
+    background-image: url("/img/promo-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+    z-index: -2;
+  }
+
+  &::after {
+    background-color: rgba(104, 183, 56, 0.85);
+    z-index: -1;
+  }
+
+  @include tablet {
+    color: black;
+    padding-top: 0;
+    text-align: left;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  @include desktop {
+    position: static;
+    min-height: 499px;
+
+    &::before,
+    &::after {
+      display: block;
+      transform: none;
+      width: 50vw;
+      height: 100%;
+    }
+
+    &::before {
+      background-image: url("/img/promo-bg-desktop.png");
+    }
+  }
+}
+
+.promo__title {
+  margin-bottom: 24px;
+  color: inherit;
+
+  @include tablet {
+    margin-bottom: 40px;
+    margin-left: 80px;
+  }
+
+  @include desktop {
+    padding-top: 40px;
+  }
+}
+
+.promo__quote {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1;
+  quotes: none;
+  display: block;
+  margin-bottom: 28px;
+
+  @include tablet {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+  }
+}
+
+.promo__inner {
+  position: relative;
+
+  @include desktop {
+    position: static;
+  }
+}
+
+.promo__image {
+  display: block;
+  width: 280px;
+  height: 270px;
+  object-fit: contain;
+  object-position: center;
+  margin: 0 auto;
+  margin-bottom: 4px;
+
+  @include tablet {
+    width: 709px;
+    height: 609px;
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -160px;
+    width: 552px;
+    height: 499px;
+  }
+}
+
+.promo__button {
+  @include tablet {
+    position: absolute;
+    top: 30px;
+    left: 80px;
+  }
+
+  @include desktop {
+    position: relative;
+    max-width: max-content;
+  }
+}

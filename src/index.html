@@ -22,7 +22,7 @@
       <header class="main-header">
         <nav class="main-navigation main-navigation--closed">
           <div class="main-navigation__logo-wrapper">
-            <a class="main-navigation__main-logo main-logo main-logo--current">
+            <a class="main-navigation__main-logo main-logo">
               <picture>
                 <source media="(min-width:1440px)" width="71" height="60" srcset="/img/logo-desktop.svg">
                 <source media="(min-width:768px)" width="71" height="58" srcset="/img/logo-tablet.svg">
@@ -62,10 +62,20 @@
           </ul>
         </nav>
       </header>
-      <h1 class="promo__title title title--large">Функциональное питание для котов</h1>
-      <q class="promo__quote">Занялся собой? Займись котом!</q>
-      <img class="promo__image" src="/img/cat-energy-food.png" width="" height="" alt="Продукт для кота">
-      <a class="promo__button button" href="#">Подобрать программу</a>
+
+      <div class="promo__container container">
+        <h1 class="promo__title title title--large">Функциональное <br> питание для котов</h1>
+        <q class="promo__quote">Занялся собой? Займись котом!</q>
+
+        <div class="promo__inner">
+          <picture>
+            <source media="(min-width:1440px)" width="552" height="499" srcset="/img/food-product-desktop.png">
+            <source media="(min-width:768px)" width="709" height="609" srcset="/img/food-product-tablet.png">
+            <img class="promo__image" src="/img/food-product.png" width="280" height="270" alt="Продукт для кота">
+          </picture>
+          <a class="promo__button button" href="/form.html">Подобрать программу</a>
+        </div>
+      </div>
     </div>
 
     <section class="program">
@@ -176,7 +186,7 @@
     </figure>
   </main>
 
-  <footer>
+  <footer class="main-footer">
     <address>
       <p>
         Приглашаем<br>к сотрудничеству<br>дилеров!
@@ -191,30 +201,33 @@
         <use xlink:href="/img/sprite.svg#cat-energy"></use>
       </svg>
     </a>
-    <ul>
-      <li class="socials-item">
-        <a href="#" title="Вконтакте">
-          <svg width="23" height="16">
-            <use xlink:href="/img/sprite.svg#icon-vkontakte"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a href="#" title="Инстаграмм">
-          <svg width="16" height="16">
-            <use xlink:href="/img/sprite.svg#icon-instagram"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a href="#" title="Фейсбук">
-          <svg width="22" height="22">
-            <use xlink:href="/img/sprite.svg#icon-facebook"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-    <a href="#">
+    <section class="footer-socials">
+      <ul class="footer-social">
+        <li class="footer-social-item">
+          <a href="https://vk.com/" title="Вконтакте">
+            <svg width="23" height="16">
+              <use xlink:href="/img/sprite.svg#icon-vkontakte"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a href="https://www.instagram.com/" title="Инстаграмм">
+            <svg width="16" height="16">
+              <use xlink:href="/img/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a href="https://www.facebook.com/" title="Фейсбук">
+            <svg width="22" height="22">
+              <use xlink:href="/img/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </section>
+    
+    <a href="https://htmlacademy.ru/">
       HTML Academy
       <svg width="27" height="34">
         <use xlink:href="/img/sprite.svg#logo-academy"></use>

@@ -3,6 +3,7 @@
   width: max-content;
   align-items: center;
   gap: 8px;
+  transition: .3s;
 
   img {
     display: block;
@@ -16,8 +17,7 @@
     opacity: 0.6;
   }
 
-  &--current {
+  &:not([href]) {
     pointer-events: none;
   }
-  
 }
