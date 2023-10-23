@@ -45,6 +45,18 @@
     transform: translate(-50%, -50%);
   }
 
+  &--cat {
+    svg {
+      margin-top: -3px;
+    }
+  }
+
+  &--puma {
+    svg {
+      margin-left: -1px;
+    }
+  }
+
   @include tablet {
     position: absolute;
     top: 50%;
@@ -54,8 +66,19 @@
     width: 200px;
     height: 200px;
 
-    svg {
-      transform: translate(-50%, -50%) scale(3.8);
+    &--cat {
+      svg {
+        width: 140px;
+        height: 192px;
+        margin-top: -15px;
+      }
+    }
+  
+    &--puma {
+      svg {
+        width: 268px;
+        height: 112px;
+      }
     }
   }
 
@@ -68,8 +91,19 @@
     height: 100px;
     transform: none;
 
-    svg {
-      transform: translate(-50%, -50%);
+    &--cat {
+      svg {
+        width: 70px;
+        height: 97px;
+        margin-top: -8px;
+      }
+    }
+
+    &--puma {
+      svg {
+        width: 134px;
+        height: 56px;
+      }
     }
   }
 }
