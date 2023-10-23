@@ -1,7 +1,10 @@
 .promo {
+  margin-bottom: 24px;
+
   @include desktop {
     position: relative;
     min-height: 700px;
+    margin-bottom: 80px;
 
     & .main-navigation__link {
       color: white;

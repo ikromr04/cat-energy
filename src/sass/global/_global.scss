@@ -24,7 +24,7 @@ img {
 }
 
 .container {
-  width: 90%;
+  width: 90%;   
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -61,6 +61,22 @@ img {
       font-size: 20px;
       line-height: normal;
     }
+  }
+}
+
+.text {
+  font-family: Arial;
+  color: #444;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 

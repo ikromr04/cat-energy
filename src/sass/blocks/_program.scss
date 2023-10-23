@@ -1,0 +1,30 @@
+.program {
+  margin-bottom: 24px;
+
+  @include tablet {
+    margin-bottom: 40px;
+  }
+
+  @include desktop {
+    margin-bottom: 72px;
+  }
+}
+
+.program__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    gap: 30px;
+  }
+
+  @include desktop {
+    display: grid;
+    gap: 80px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
