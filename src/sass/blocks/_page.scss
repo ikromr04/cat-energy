@@ -3,6 +3,23 @@
   line-height: 1.4;
   color: #444;
   font-family: "Oswald", "Arial", sans-serif;
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsla(97, 53%, 47%, 0.85);
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(77, 133, 43, 0.85);
+  }
 }
 
 .page__body {
