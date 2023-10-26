@@ -1,0 +1,23 @@
+.main-logo {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  gap: 8px;
+  transition: .3s;
+
+  img {
+    display: block;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:not([href]) {
+    pointer-events: none;
+  }
+}
