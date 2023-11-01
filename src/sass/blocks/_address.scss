@@ -1,0 +1,52 @@
+.address {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  padding: 28px 0;
+  font-style: normal;
+
+  @include tablet {
+    gap: 295px;
+    margin-bottom: 0;
+    padding: 60px 42px;
+  }
+
+  @include desktop {
+    gap: 90px;
+    max-width: 570px;
+    position: absolute;
+    left: 110px;
+    bottom: -1060px;
+    background-color: #fff;
+    padding: 60px 90px 50px 75px;
+  }
+}
+
+.address__cooperation {
+  font-family: 'Oswald';
+  font-size: 16px;
+  line-height: 18px;
+  color: #111;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 3px;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 21px;
+    min-width: 170px;
+    padding: 0;
+  }
+}
+
+.address__location {
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+
+  @include tablet {
+    font-size: 16px;
+    min-width: 160px;
+  }
+}
