@@ -1,7 +1,5 @@
 .address {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2px;
+  background-color: #fff;
   padding: 28px 0;
   font-style: normal;
 
@@ -22,14 +20,19 @@
   }
 }
 
+.address__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 24px 0;
+}
+
 .address__cooperation {
-  font-family: 'Oswald';
   font-size: 16px;
-  line-height: 18px;
+  line-height: 120%;
   color: #111;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 3px;
 
   @include tablet {
     font-size: 20px;
@@ -39,14 +42,7 @@
   }
 }
 
-.address__location {
-  font-family: Arial;
-  font-size: 14px;
-  line-height: 20px;
-  margin: 0;
-
-  @include tablet {
-    font-size: 16px;
-    min-width: 160px;
-  }
+.address__map {
+  width: 100%;
+  height: 360px;
 }
